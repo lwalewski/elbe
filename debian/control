@@ -12,7 +12,8 @@ Build-Depends: dh-python,
   xmlto,
   lintian,
   source-highlight,
-  git
+  git,
+  pandoc
 Standards-Version: 3.9.6
 Homepage: http://elbe-rfs.org
 
@@ -31,7 +32,7 @@ Depends: ${misc:Depends},
   python-lxml,
   python-apt,
   python-gpgme,
-  python-pyme
+  python-pyme|python-gpg,
 Description: common files
  Common files for ELBE (embedded linux build environment). These
  python-modules are shared by several elbe subcommands.
